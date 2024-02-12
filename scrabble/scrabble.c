@@ -18,7 +18,6 @@ size_t computer_score(char word[])
             score += POINTS[word[i] - 'a'];
         }
     }
-    
 
     return score;
 }
@@ -39,7 +38,8 @@ int main(int argc, char **argv)
     score1 = computer_score(word1);
     score2 = computer_score(word2);
 
-    if (!score1 || !score2) return -1;
+    if (!score1 || !score2)
+        return -1;
 
     if (score1 == score2)
     {
